@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["playwright", "prettier"],
+  "extends": ["plugin:playwright/recommended", "prettier"],
+  "rules": {
+    "playwright/consistent-spacing-between-blocks": "off",
+    "prettier/prettier": "error"
+  }
+}

@@ -1,24 +1,30 @@
-export const validAddress = {
+/**
+ * Test checkout data used across cart and checkout tests.
+ */
+
+/** A valid shipping/billing address for use in checkout flows */
+export const validShippingAddress = {
   firstName: 'Test',
   lastName: 'User',
   address: '123 Main Street',
+  company: 'company',
   city: 'New York',
   zip: '10001',
-  country: 'US'
+  country: 'US',
+  province: 'New York',
+  email: 'testuser@gmail.com',
+  phone: '1234567890'
 };
 
-export const validCard = {
-  cardNumber: '4242 4242 4242 4242',
-  expiry: '12/26',
-  cvv: '123'
+export const validBillingAddress = {
+  firstName: 'Test',
+  lastName: 'User',
+  address: '123 Main Street',
+  company: 'company',
+  city: 'New York',
+  zip: '10001',
+  country: 'US',
+  province: 'New York',
+  phone: '1234567890'
 };
 
-export const invalidCard = {
-  cardNumber: '1234 1234 1234 1234',
-  expiry: '01/20',
-  cvv: 'abc'
-};
-
-export const validCoupon = 'DISCOUNT10';
-export const invalidCoupon = 'INVALIDCODE';
-export const expiredCoupon = 'EXPIRED2020';

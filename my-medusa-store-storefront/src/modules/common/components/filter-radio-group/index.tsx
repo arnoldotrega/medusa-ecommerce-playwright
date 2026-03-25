@@ -22,7 +22,7 @@ const FilterRadioGroup = ({
   return (
     <div className="flex gap-x-3 flex-col gap-y-3">
       <Text className="txt-compact-small-plus text-ui-fg-muted">{title}</Text>
-      <RadioGroup data-testid={dataTestId} onValueChange={handleChange}>
+      <RadioGroup  onValueChange={handleChange}>
         {items?.map((i) => (
           <div
             key={i.value}
@@ -45,7 +45,7 @@ const FilterRadioGroup = ({
                   "text-ui-fg-base": i.value === value,
                 }
               )}
-              data-testid="radio-label"
+              data-testid={i.value.replaceAll("_", "-")}
               data-active={i.value === value}
             >
               {i.label}

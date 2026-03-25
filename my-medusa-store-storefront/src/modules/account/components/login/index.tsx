@@ -51,7 +51,7 @@ const Login = ({ setCurrentView }: Props) => {
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}
           className="underline"
-          data-testid="register-button"
+          data-testid="register-link"
         >
           Join us
         </button>
